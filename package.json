@@ -1,0 +1,15 @@
+{
+  "name": "fake-apis-server",
+  "version": "1.0.0",
+  "main": "db.json",
+  "repository": "https://github.com/EduWireApps/fake-apis-server.git",
+  "author": "Florian LEFEBVRE <contact@florian-lefebvre.dev>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "json-server --watch db.json"
+  },
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}
