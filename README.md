@@ -2,7 +2,7 @@
 
 Express Typescript server
 
-[BROKEN] https://still-earth-97911.herokuapp.com/
+https://still-earth-97911.herokuapp.com/
 
 ## Deploy to Heroku
 
@@ -32,6 +32,10 @@ $ yarn start
 ### EcoleDirecte
 
 **Headers:** Content-Type: text/plain
+
+**Available users**
+
+- _login:_ john.doe / _password:_ 123456 / _token:_ a95fd30b-ca20-467b-8128-679f48e1498e
 
 #### Login
 
