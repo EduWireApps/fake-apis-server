@@ -85,6 +85,10 @@ class EdController {
       setResponse({ contacts: req.user.contacts }, req.user.loginData.token)
     );
   }
+
+  public schoolLife(req, res) {
+    res.send(setResponse(req.user.schoolLife, req.user.loginData.token));
+  }
 }
 
 export default EdController;

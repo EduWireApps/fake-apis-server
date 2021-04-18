@@ -21,6 +21,7 @@ class EdRouter {
     this.router.post("/homework/:date", this.ctrl.homework.get);
     this.router.post("/workspaces", this.ctrl.workspaces);
     this.router.post("/contacts", this.ctrl.contacts);
+    this.router.post("/schoollife", this.ctrl.schoolLife);
   }
 }
 
