@@ -4,6 +4,12 @@ import users from "./db/ecoledirecte/users";
 import errors from "./db/ecoledirecte/errors";
 const router = express.Router();
 
+declare module "express-serve-static-core" {
+  interface Request {
+    user?: Object;
+  }
+}
+
 router.use(bodyParser.text());
 
 const convertBody = (text) => {
@@ -11,12 +17,7 @@ const convertBody = (text) => {
 };
 
 router.get("/", (req, res) => {
-  // const data = {
-  //   data: "ecoledirecte",
-  // };
-  // res.json(data);
-  // res.send(users);
-  res.send(errors);
+  res.send("EcoleDirecte");
 });
 
 router.post("/login", (req, res) => {
@@ -39,6 +40,26 @@ router.post("/login", (req, res) => {
   } else {
     res.send(errors.login.loginOrPassword);
   }
+});
+
+router.use((req, res, next) => {
+  if (req.method == "POST") {
+    const data = convertBody(req.body);
+    if (!data.token) return res.send(errors.login.invalidToken);
+    const user = users.find((u) => u.loginData.token == data.token);
+    if (user) {
+      req.user = user;
+      next();
+    } else {
+      return res.send(errors.login.invalidToken);
+    }
+  }
+});
+
+router.post("/test", (req, res) => {
+  const data = convertBody(req.body);
+  data.user = req.user;
+  res.send(data);
 });
 
 export default router;

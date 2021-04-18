@@ -23,6 +23,14 @@ const login = {
       accounts: [],
     },
   },
+  invalidToken: {
+    code: 520,
+    token: "",
+    message: "Token invalide !",
+    data: {
+      accounts: [],
+    },
+  },
 };
 
 export default login;
