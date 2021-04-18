@@ -1,13 +1,13 @@
 const express = require("express");
-const bodyParser = require("body-parser");
+// const bodyParser = require("body-parser");
 const app = express();
 const port = 3500;
 const ecoledirecte = require("./ecoledirecte");
 const pronote = require("./pronote");
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.raw({ type: "text/plain" }));
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.raw({ type: "text/plain" }));
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
