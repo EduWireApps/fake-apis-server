@@ -1,4 +1,4 @@
-import convertBody from "./utils";
+import { convertBody, setResponse } from "./utils";
 import users from "./db/users";
 import errors from "./db/errors";
 
@@ -14,10 +14,10 @@ class EdController {
   }
 
   public login(req, res) {
-    const data = convertBody(req.body);
-    const user = users.find((u) => u.account.identifiant == data.identifiant);
+    const body = convertBody(req.body);
+    const user = users.find((u) => u.account.identifiant == body.identifiant);
     if (user) {
-      if (data.motdepasse == user.loginData.password) {
+      if (body.motdepasse == user.loginData.password) {
         const response = {
           code: 200,
           token: user.loginData.token,
@@ -37,9 +37,9 @@ class EdController {
 
   public authMiddleware(req, res, next) {
     if (req.method == "POST") {
-      const data = convertBody(req.body);
-      if (!data.token) return res.send(errors.login.invalidToken);
-      const user = users.find((u) => u.loginData.token == data.token);
+      const body = convertBody(req.body);
+      if (!body.token) return res.send(errors.login.invalidToken);
+      const user = users.find((u) => u.loginData.token == body.token);
       if (user) {
         req.user = user;
         next();
@@ -50,12 +50,16 @@ class EdController {
   }
 
   public test(req, res) {
-    const data = convertBody(req.body);
-    data.user = req.user;
-    res.send(data);
+    const body = convertBody(req.body);
+    body.user = req.user;
+    res.send(body);
   }
 
-  public grades(req, res) {}
+  public grades(req, res) {
+    const body = convertBody(req.body);
+    const data = req.user.grades;
+    res.send(setResponse(data, req.user.loginData.token));
+  }
 }
 
 export default EdController;

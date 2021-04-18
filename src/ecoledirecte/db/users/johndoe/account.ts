@@ -1,5 +1,3 @@
-// https://www.uuidgenerator.net/
-
 const account = {
   // compte enfant
   accessToken: "",
@@ -291,14 +289,4 @@ const account = {
   uid: "6ef6f7ee-9fbe-427f-a674-f9b3333e3091",
 };
 
-const loginData = {
-  password: "123456",
-  token: "a95fd30b-ca20-467b-8128-679f48e1498e",
-};
-
-const user = {
-  account,
-  loginData,
-};
-
-export default user;
+export default account;
