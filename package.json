@@ -8,8 +8,11 @@
   "private": true,
   "scripts": {
     "dev": "nodemon src/server.ts",
-    "build": "tsc --project ./",
-    "start": "node dist/app.js"
+    "postinstall": "yarn build && mv -i -v public dist/ && rm -v -rf src",
+    "build:default": "tsc --project ./",
+    "build:windows": "yarn build:default && xcopy /E /I public dist\\public",
+    "build:linux": "yarn build:default && cp -avr public dist",
+    "start": "node dist/server.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",

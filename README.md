@@ -2,7 +2,7 @@
 
 Express Typescript server
 
-https://still-earth-97911.herokuapp.com/
+[BROKEN] https://still-earth-97911.herokuapp.com/
 
 ## Deploy to Heroku
 
@@ -15,11 +15,15 @@ $ git push heroku main
 ## Scripts
 
 ```bash
-$ yarn dev # Starts dev server (typescript from src/)
+# Starts dev server (typescript from src/)
+$ yarn dev
 
-$ yarn build # Build the project from typescript to javascript files in dist/
+# Build the project from typescript to javascript files in dist/
+$ yarn build:windows
+$ yarn build:linux
 
-$ yarn start # Starts the server (js from dist/)
+# Starts the server (js from dist/)
+$ yarn start
 
 ```
 
