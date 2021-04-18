@@ -16,8 +16,9 @@ class EdRouter {
     this.router.get("/", this.ctrl.index);
     this.router.post("/login", this.ctrl.login);
     this.router.use(this.ctrl.authMiddleware);
-    this.router.post("/test", this.ctrl.test);
     this.router.post("/grades", this.ctrl.grades);
+    this.router.post("/homework", this.ctrl.homework.index);
+    this.router.post("/homework/:date", this.ctrl.homework.get);
   }
 }
 

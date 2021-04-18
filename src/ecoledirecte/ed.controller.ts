@@ -49,17 +49,32 @@ class EdController {
     }
   }
 
-  public test(req, res) {
-    const body = convertBody(req.body);
-    body.user = req.user;
-    res.send(body);
-  }
-
   public grades(req, res) {
-    const body = convertBody(req.body);
     const data = req.user.grades;
     res.send(setResponse(data, req.user.loginData.token));
   }
+
+  public homework = {
+    index(req, res) {
+      const data = req.user.homework.homeworkOverview;
+      res.send(setResponse(data, req.user.loginData.token));
+    },
+    get(req, res) {
+      const param = req.params.date;
+      const homework = req.user.homework.homeworkDetails.find(
+        (h) => h.date === param
+      );
+      if (homework) {
+        res.send(setResponse(homework, req.user.loginData.token));
+      } else {
+        res.send({
+          ...errors.homework,
+          host: "HTTP40",
+          token: req.user.loginData.token,
+        });
+      }
+    },
+  };
 }
 
 export default EdController;
