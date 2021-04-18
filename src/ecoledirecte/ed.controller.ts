@@ -75,6 +75,10 @@ class EdController {
       }
     },
   };
+
+  public workspaces(req, res) {
+    res.send(setResponse(req.user.workspaces, req.user.loginData.token));
+  }
 }
 
 export default EdController;

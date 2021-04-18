@@ -28,7 +28,10 @@ data={
 #### Grades: `POST` `/ecoledirecte/grades`
 
 #### Homework overview: `POST` `/ecoledirecte/homework`
+
 #### Get homework by date: `POST` `/ecoledirecte/homework/:date` (YEAR-MONTH-DAY: 2020-05-06)
+
+##### Workspaces: `POST` `/ecoledirecte/workspaces`
 
 ### Pronote
 
