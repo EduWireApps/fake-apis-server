@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "dev": "nodemon src/server.ts",
-    "postinstall": "yarn build && mv -i -v public dist/ && rm -v -rf src",
+    "postinstall": "yarn build:default && mv -i -v public dist/ && rm -v -rf src",
     "build:default": "tsc --project ./",
     "build:windows": "yarn build:default && xcopy /E /I public dist\\public",
     "build:linux": "yarn build:default && cp -avr public dist",
