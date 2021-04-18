@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "nodemon app.ts",
+    "dev": "nodemon src/server.ts",
     "build": "tsc --project ./",
     "start": "node dist/app.js"
   },
