@@ -2,6 +2,16 @@
 
 Express Typescript server
 
+https://still-earth-97911.herokuapp.com/
+
+## Deploy to Heroku
+
+[Florian LEFEBVRE](https://github.com/florian-lefebvre) can only deploy the server since the app is registered on his Heroku account.
+
+```bash
+$ git push heroku main
+```
+
 ## Scripts
 
 ```bash
