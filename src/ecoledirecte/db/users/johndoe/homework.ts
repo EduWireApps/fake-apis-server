@@ -1,61 +1,63 @@
-const homeworkOverview = {
-  "2021-04-26": [
-    {
-      matiere: "HISTOIRE-GEOGRAPHIE",
-      codeMatiere: "HI-GE",
-      aFaire: true,
-      idDevoir: 16095,
-      documentsAFaire: true,
-      donneLe: "2021-04-12",
-      effectue: false,
-      interrogation: false,
-      rendreEnLigne: false,
-    },
-  ],
-  "2021-04-27": [
-    {
-      matiere: "MATHEMATIQUES",
-      codeMatiere: "MATHS",
-      aFaire: true,
-      idDevoir: 16357,
-      documentsAFaire: false,
-      donneLe: "2021-04-09",
-      effectue: false,
-      interrogation: false,
-      rendreEnLigne: false,
-    },
-  ],
-  "2021-04-29": [
-    {
-      matiere: "DISCIP. NON LINGUIST",
-      codeMatiere: "DNL",
-      aFaire: true,
-      idDevoir: 16311,
-      documentsAFaire: false,
-      donneLe: "2021-04-08",
-      effectue: false,
-      interrogation: false,
-      rendreEnLigne: false,
-    },
-  ],
-  "2021-04-30": [
-    {
-      matiere: "MATHEMATIQUES",
-      codeMatiere: "MATHS",
-      aFaire: true,
-      idDevoir: 16358,
-      documentsAFaire: false,
-      donneLe: "2021-04-09",
-      effectue: false,
-      interrogation: false,
-      rendreEnLigne: false,
-    },
-  ],
-};
+const today = new Date();
+const dd = String(today.getDate()).padStart(2, "0");
+const mm = String(today.getMonth() + 1).padStart(2, "0");
+const yyyy = today.getFullYear();
 
-const homeworkDetails = [
+const hO = [
   {
-    date: "2021-04-26",
+    matiere: "HISTOIRE-GEOGRAPHIE",
+    codeMatiere: "HI-GE",
+    aFaire: true,
+    idDevoir: 16095,
+    documentsAFaire: true,
+    donneLe: "2021-04-12",
+    effectue: false,
+    interrogation: false,
+    rendreEnLigne: false,
+  },
+  {
+    matiere: "HISTOIRE-GEOGRAPHIE",
+    codeMatiere: "HI-GE",
+    aFaire: true,
+    idDevoir: 16095,
+    documentsAFaire: true,
+    donneLe: "2021-04-12",
+    effectue: false,
+    interrogation: false,
+    rendreEnLigne: false,
+  },
+  {
+    matiere: "DISCIP. NON LINGUIST",
+    codeMatiere: "DNL",
+    aFaire: true,
+    idDevoir: 16311,
+    documentsAFaire: false,
+    donneLe: "2021-04-08",
+    effectue: false,
+    interrogation: false,
+    rendreEnLigne: false,
+  },
+  {
+    matiere: "MATHEMATIQUES",
+    codeMatiere: "MATHS",
+    aFaire: true,
+    idDevoir: 16358,
+    documentsAFaire: false,
+    donneLe: "2021-04-09",
+    effectue: false,
+    interrogation: false,
+    rendreEnLigne: false,
+  },
+];
+
+let homeworkOverview = {};
+
+hO.forEach((e, i) => {
+  homeworkOverview[`${yyyy}-${mm}-${parseInt(dd) + i}`] = e;
+});
+
+let homeworkDetails = [
+  {
     matieres: [
       {
         entityCode: "1D",
@@ -100,7 +102,6 @@ const homeworkDetails = [
     ],
   },
   {
-    date: "2021-04-27",
     matieres: [
       {
         entityCode: "1_MATHS-4",
@@ -136,7 +137,6 @@ const homeworkDetails = [
     ],
   },
   {
-    date: "2021-04-29",
     matieres: [
       {
         entityCode: "1_DNL-HG",
@@ -172,7 +172,6 @@ const homeworkDetails = [
     ],
   },
   {
-    date: "2021-04-30",
     matieres: [
       {
         entityCode: "1_MATHS-4",
@@ -208,6 +207,10 @@ const homeworkDetails = [
     ],
   },
 ];
+
+homeworkDetails.forEach((e, i) => {
+  e["date"] = `${yyyy}-${mm}-${parseInt(dd) + i}`;
+});
 
 const homework = { homeworkOverview, homeworkDetails };
 
