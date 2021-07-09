@@ -53,7 +53,7 @@ const hO = [
 let homeworkOverview = {};
 
 hO.forEach((e, i) => {
-  homeworkOverview[`${yyyy}-${mm}-${parseInt(dd) + i}`] = [e];
+  homeworkOverview[`${yyyy}-${mm}-${(parseInt(dd) + i).toString().padStart(2, "0")}`] = [e];
 });
 
 let homeworkDetails = [
@@ -209,7 +209,7 @@ let homeworkDetails = [
 ];
 
 homeworkDetails.forEach((e, i) => {
-  e["date"] = `${yyyy}-${mm}-${parseInt(dd) + i}`;
+  e["date"] = `${yyyy}-${mm}-${(parseInt(dd) + i).toString().padStart(2, "0")}`;
 });
 
 const homework = { homeworkOverview, homeworkDetails };
