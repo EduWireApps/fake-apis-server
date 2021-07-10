@@ -1,5 +1,7 @@
 # fake-apis-server
 
+test
+
 Express Typescript server
 
 https://still-earth-97911.herokuapp.com/
