@@ -1,18 +1,10 @@
 # fake-apis-server
 
-test
-
 Express Typescript server
 
 https://still-earth-97911.herokuapp.com/
 
-## Deploy to Heroku
-
-[Florian LEFEBVRE](https://github.com/florian-lefebvre) can only deploy the server since the app is registered on his Heroku account.
-
-```bash
-$ git push heroku main
-```
+Pushing on the `main` branch automatically updates the heroku deployment. The API is hosted on [Florian LEFEBVRE](https://github.com/florian-lefebvre)'s personal heroku account.
 
 ## Scripts
 
