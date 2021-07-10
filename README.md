@@ -88,6 +88,10 @@ data={
 }
 ```
 
+#### Mails
+
+`POST` `/ecoledirecte/mails`
+
 ### Pronote
 
 Not implemented yet.

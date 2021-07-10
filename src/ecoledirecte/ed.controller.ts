@@ -107,6 +107,10 @@ class EdController {
     const agenda = daylist.map((v) => req.user.agenda(v,v));
     res.send(setResponse(agenda, req.user.loginData.token));
   }
+
+  public mails(req, res) {
+    res.send(setResponse(req.user.mails, req.user.loginData.token));
+  }
 }
 
 export default EdController;
