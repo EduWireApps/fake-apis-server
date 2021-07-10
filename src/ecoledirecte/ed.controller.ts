@@ -100,8 +100,8 @@ class EdController {
     };
 
     const body = convertBody(req.body);
-    const from: string = body.from;
-    const to: string = body.to;
+    const from: string = body.dateDebut;
+    const to: string = body.dateFin;
 
     const daylist = getDaysArray(new Date(from), new Date(to));
     const agenda = daylist.map((v) => req.user.agenda(v,v));

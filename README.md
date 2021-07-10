@@ -83,8 +83,8 @@ Returns events between two dates. Never returns anything on Saturdays and Sunday
 ```raw
 data={
     "token": "<token>",
-    "from": "<date>",
-    "to": "<date>"
+    "dateDebut": "<date>",
+    "dateFin": "<date>"
 }
 ```
 
