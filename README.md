@@ -90,7 +90,8 @@ data={
 
 #### Mails
 
-`POST` `/ecoledirecte/mails`
+- All : `POST` `/ecoledirecte/mails`
+- By id: `POST` `/ecoledirecte/mails/:id` (int)
 
 ### Pronote
 

@@ -108,8 +108,14 @@ class EdController {
     res.send(setResponse(agenda, req.user.loginData.token));
   }
 
-  public mails(req, res) {
-    res.send(setResponse(req.user.mails, req.user.loginData.token));
+  public mails = {
+    index(req, res) {
+      res.send(setResponse(req.user.mails.mailsResponse, req.user.loginData.token));
+    },
+    get(req, res) {
+      const param = parseInt(req.params.id);
+      res.send(setResponse(req.user.mails.getMail(param), req.user.loginData.token));
+    }
   }
 }
 
