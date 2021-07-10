@@ -89,6 +89,24 @@ class EdController {
   public schoolLife(req, res) {
     res.send(setResponse(req.user.schoolLife, req.user.loginData.token));
   }
+
+  public agenda(req, res) {
+    const getDaysArray = (s, e) => {
+      for (var a = [], d = new Date(s); d <= e; d.setDate(d.getDate() + 1)) {
+        const weekday = d.getDay() || 7;
+        if (![6, 7].includes(weekday)) a.push(new Date(d));
+      }
+      return a.map((v) => v.toISOString().slice(0, 10));
+    };
+
+    const body = convertBody(req.body);
+    const from: string = body.from;
+    const to: string = body.to;
+
+    const daylist = getDaysArray(new Date(from), new Date(to));
+    const agenda = daylist.map((v) => req.user.agenda(v,v));
+    res.send(setResponse(agenda, req.user.loginData.token));
+  }
 }
 
 export default EdController;

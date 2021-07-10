@@ -90,6 +90,23 @@ https://github.com/EduWireApps/ynotes/blob/190cbb7bc4f1b163be8db62881f48dddaef2b
 
 https://github.com/EduWireApps/ynotes/blob/190cbb7bc4f1b163be8db62881f48dddaef2bee7/lib/core/apis/EcoleDirecte/ecoleDirecteMethods.dart#L174
 
+### Agenda
+
+`POST` `/ecoledirecte/agenda`
+
+`<date>` as `yyyy-mm-dd` format. Example: 2021-07-10
+
+Returns events between two dates. Never returns anything on Saturdays and Sundays.
+
+
+```raw
+data={
+    "token": "<token>",
+    "from": "<date>",
+    "to": "<date>"
+}
+```
+
 ### Pronote
 
 TBD

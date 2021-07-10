@@ -22,6 +22,7 @@ class EdRouter {
     this.router.post("/workspaces", this.ctrl.workspaces);
     this.router.post("/contacts", this.ctrl.contacts);
     this.router.post("/schoollife", this.ctrl.schoolLife);
+    this.router.post("/agenda", this.ctrl.agenda);
   }
 }
 

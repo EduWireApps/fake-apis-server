@@ -5,6 +5,7 @@ import homework from "./homework";
 import workspaces from "./workspaces";
 import contacts from "./contacts";
 import schoolLife from "./schoolLife";
+import agenda from "./agenda";
 
 const user = {
   account,
@@ -14,6 +15,7 @@ const user = {
   workspaces,
   contacts,
   schoolLife,
+  agenda
 };
 
 export default user;
