@@ -104,19 +104,26 @@ class EdController {
     const to: string = body.dateFin;
 
     const daylist = getDaysArray(new Date(from), new Date(to));
-    const agenda = daylist.map((v) => req.user.agenda(v,v));
+    let agenda = [];
+    daylist.forEach((v) => {
+      agenda = agenda.concat(req.user.agenda(v, v));
+    });
     res.send(setResponse(agenda, req.user.loginData.token));
   }
 
   public mails = {
     index(req, res) {
-      res.send(setResponse(req.user.mails.mailsResponse, req.user.loginData.token));
+      res.send(
+        setResponse(req.user.mails.mailsResponse, req.user.loginData.token)
+      );
     },
     get(req, res) {
       const param = parseInt(req.params.id);
-      res.send(setResponse(req.user.mails.getMail(param), req.user.loginData.token));
-    }
-  }
+      res.send(
+        setResponse(req.user.mails.getMail(param), req.user.loginData.token)
+      );
+    },
+  };
 }
 
 export default EdController;

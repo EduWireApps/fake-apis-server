@@ -417,7 +417,7 @@ const events = [
   },
 ];
 
-const agenda = (date: string) => {
+const agenda = (date: string): any[] => {
   const o = [];
   for (let index = 0; index < 5; index++) {
     o.push(events[Math.floor(Math.random()*events.length)]);
