@@ -2510,10 +2510,807 @@ const parametrage = {
   ],
 };
 
+const LSUN = {
+  A001: [
+    {
+      cdt: false,
+      codeMatiere: "AGL1",
+      libelleMatiere: "ANGLAIS LV1",
+      isFirstOfMatiere: true,
+      nbElemProgMatiere: 2,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Mobiliser les outils pour écrire, corriger, modifier son écrit.",
+      idElemProg: 629,
+      valeur: "2",
+      professeurs: [
+        {
+          id: 824,
+          nom: "Mme DAO M.",
+        },
+        {
+          id: 123,
+          nom: "M. HITZ F.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "AGL1",
+      libelleMatiere: "ANGLAIS LV1",
+      isFirstOfMatiere: false,
+      nbElemProgMatiere: 2,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Reformuler un message, rendre compte, raconter, décrire, expliquer, argumenter.",
+      idElemProg: 630,
+      valeur: "2",
+      professeurs: [
+        {
+          id: 824,
+          nom: "Mme DAO M.",
+        },
+        {
+          id: 123,
+          nom: "M. HITZ F.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "SVT",
+      libelleMatiere: "SCIENCES VIE & TERRE",
+      isFirstOfMatiere: true,
+      nbElemProgMatiere: 3,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Communiquer sur ses démarches, ses résultats et ses choix, en argumentant.",
+      idElemProg: 760,
+      valeur: "3",
+      professeurs: [
+        {
+          id: 310,
+          nom: "M. POURCELOT P.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "SVT",
+      libelleMatiere: "SCIENCES VIE & TERRE",
+      isFirstOfMatiere: false,
+      nbElemProgMatiere: 3,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Lire et exploiter des données présentées sous différentes formes : tableaux, graphiques, diagrammes, dessins, conclusions de recherches, cartes heuristiques, etc.",
+      idElemProg: 765,
+      valeur: "3",
+      professeurs: [
+        {
+          id: 310,
+          nom: "M. POURCELOT P.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "SVT",
+      libelleMatiere: "SCIENCES VIE & TERRE",
+      isFirstOfMatiere: false,
+      nbElemProgMatiere: 3,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Représenter des données sous différentes formes, passer d’une représentation à une autre et choisir celle qui est adaptée à la situation de travail.",
+      idElemProg: 766,
+      valeur: "3",
+      professeurs: [
+        {
+          id: 310,
+          nom: "M. POURCELOT P.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "TECHN",
+      libelleMatiere: "TECHNOLOGIE",
+      isFirstOfMatiere: true,
+      nbElemProgMatiere: 3,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Associer des solutions techniques à des fonctions.",
+      idElemProg: 785,
+      valeur: "3",
+      professeurs: [
+        {
+          id: 445,
+          nom: "M. ATSI M.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "TECHN",
+      libelleMatiere: "TECHNOLOGIE",
+      isFirstOfMatiere: false,
+      nbElemProgMatiere: 3,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Exprimer sa pensée à l'aide d'outils de description adaptés: croquis, schémas, graphes, diagrammes, tableaux (représentations non normées).",
+      idElemProg: 789,
+      valeur: "3",
+      professeurs: [
+        {
+          id: 445,
+          nom: "M. ATSI M.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "TECHN",
+      libelleMatiere: "TECHNOLOGIE",
+      isFirstOfMatiere: false,
+      nbElemProgMatiere: 3,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Décrire, en utilisant les outils et langages de descriptions adaptés, la structure et le comportement des objets.",
+      idElemProg: 792,
+      valeur: "3",
+      professeurs: [
+        {
+          id: 445,
+          nom: "M. ATSI M.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "EDMUS",
+      libelleMatiere: "EDUCATION MUSICALE",
+      isFirstOfMatiere: true,
+      nbElemProgMatiere: 1,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Analyser des œuvres musicales en utilisant un vocabulaire précis.",
+      idElemProg: 658,
+      valeur: "3",
+      professeurs: [
+        {
+          id: 296,
+          nom: "M. CZWARTKOWSKI G.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "EPS",
+      libelleMatiere: "ED.PHYSIQUE & SPORT.",
+      isFirstOfMatiere: true,
+      nbElemProgMatiere: 3,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Accepter la défaite et gagner avec modestie et simplicité.",
+      idElemProg: 683,
+      valeur: "4",
+      professeurs: [
+        {
+          id: 29,
+          nom: "M. COURANT J.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "EPS",
+      libelleMatiere: "ED.PHYSIQUE & SPORT.",
+      isFirstOfMatiere: false,
+      nbElemProgMatiere: 3,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Prendre et assumer des responsabilités au sein d'un collectif pour réaliser un projet ou remplir un contrat.",
+      idElemProg: 684,
+      valeur: "3",
+      professeurs: [
+        {
+          id: 29,
+          nom: "M. COURANT J.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "EPS",
+      libelleMatiere: "ED.PHYSIQUE & SPORT.",
+      isFirstOfMatiere: false,
+      nbElemProgMatiere: 3,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Agir avec et pour les autres, en prenant en compte les différences.",
+      idElemProg: 685,
+      valeur: "4",
+      professeurs: [
+        {
+          id: 29,
+          nom: "M. COURANT J.",
+        },
+      ],
+    },
+  ],
+  A002: [
+    {
+      cdt: false,
+      codeMatiere: "PH-CH",
+      libelleMatiere: "PHYSIQUE-CHIMIE",
+      isFirstOfMatiere: true,
+      nbElemProgMatiere: 2,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Proposer une ou des hypothèses pour répondre à une question scientifique. Concevoir une expérience pour la ou les tester.",
+      idElemProg: 738,
+      valeur: "3",
+      professeurs: [
+        {
+          id: 303,
+          nom: "Mme ALLAM S.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "PH-CH",
+      libelleMatiere: "PHYSIQUE-CHIMIE",
+      isFirstOfMatiere: false,
+      nbElemProgMatiere: 2,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Interpréter des résultats expérimentaux, en tirer des conclusions et les communiquer en argumentant.",
+      idElemProg: 740,
+      valeur: "3",
+      professeurs: [
+        {
+          id: 303,
+          nom: "Mme ALLAM S.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "TECHN",
+      libelleMatiere: "TECHNOLOGIE",
+      isFirstOfMatiere: true,
+      nbElemProgMatiere: 2,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Imaginer, concevoir et programmer des applications informatiques nomades.",
+      idElemProg: 788,
+      valeur: "4",
+      professeurs: [
+        {
+          id: 445,
+          nom: "M. ATSI M.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "TECHN",
+      libelleMatiere: "TECHNOLOGIE",
+      isFirstOfMatiere: false,
+      nbElemProgMatiere: 2,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Appliquer les principes élémentaires de l’algorithmique et du codage à la résolution d’un problème simple.",
+      idElemProg: 793,
+      valeur: "3",
+      professeurs: [
+        {
+          id: 445,
+          nom: "M. ATSI M.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "EDMUS",
+      libelleMatiere: "EDUCATION MUSICALE",
+      isFirstOfMatiere: true,
+      nbElemProgMatiere: 4,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Analyser des œuvres musicales en utilisant un vocabulaire précis.",
+      idElemProg: 658,
+      valeur: "2",
+      professeurs: [
+        {
+          id: 296,
+          nom: "M. CZWARTKOWSKI G.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "EDMUS",
+      libelleMatiere: "EDUCATION MUSICALE",
+      isFirstOfMatiere: false,
+      nbElemProgMatiere: 4,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Identifier par comparaison les différences et ressemblances dans l’interprétation d’une œuvre donnée.",
+      idElemProg: 660,
+      valeur: "2",
+      professeurs: [
+        {
+          id: 296,
+          nom: "M. CZWARTKOWSKI G.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "EDMUS",
+      libelleMatiere: "EDUCATION MUSICALE",
+      isFirstOfMatiere: false,
+      nbElemProgMatiere: 4,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Réutiliser certaines caractéristiques (style, technique, etc.) d’une œuvre connue pour nourrir son travail.",
+      idElemProg: 661,
+      valeur: "4",
+      professeurs: [
+        {
+          id: 296,
+          nom: "M. CZWARTKOWSKI G.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "EDMUS",
+      libelleMatiere: "EDUCATION MUSICALE",
+      isFirstOfMatiere: false,
+      nbElemProgMatiere: 4,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Concevoir, réaliser, arranger, pasticher une courte pièce préexistante, notamment à l’aide d’outils numériques.",
+      idElemProg: 662,
+      valeur: "4",
+      professeurs: [
+        {
+          id: 296,
+          nom: "M. CZWARTKOWSKI G.",
+        },
+      ],
+    },
+  ],
+  A003: [
+    {
+      cdt: false,
+      codeMatiere: "FRANC",
+      libelleMatiere: "FRANCAIS",
+      isFirstOfMatiere: true,
+      nbElemProgMatiere: 1,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Adopter des stratégies et des procédures d’écriture efficaces.",
+      idElemProg: 605,
+      valeur: "3",
+      professeurs: [
+        {
+          id: 63,
+          nom: "Mme LIPKA V.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "HI-GE",
+      libelleMatiere: "HISTOIRE-GEOGRAPHIE",
+      isFirstOfMatiere: true,
+      nbElemProgMatiere: 6,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Nommer et localiser les grands repères géographiques.",
+      idElemProg: 707,
+      valeur: "4",
+      professeurs: [
+        {
+          id: 839,
+          nom: "M. FAUCHER H.",
+        },
+        {
+          id: 568,
+          nom: "M. GUIRLET L.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "HI-GE",
+      libelleMatiere: "HISTOIRE-GEOGRAPHIE",
+      isFirstOfMatiere: false,
+      nbElemProgMatiere: 6,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Nommer, localiser et caractériser un lieu dans un espace géographique.",
+      idElemProg: 708,
+      valeur: "4",
+      professeurs: [
+        {
+          id: 839,
+          nom: "M. FAUCHER H.",
+        },
+        {
+          id: 568,
+          nom: "M. GUIRLET L.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "HI-GE",
+      libelleMatiere: "HISTOIRE-GEOGRAPHIE",
+      isFirstOfMatiere: false,
+      nbElemProgMatiere: 6,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Situer des lieux et des espaces les uns par rapport aux autres.",
+      idElemProg: 710,
+      valeur: "4",
+      professeurs: [
+        {
+          id: 839,
+          nom: "M. FAUCHER H.",
+        },
+        {
+          id: 568,
+          nom: "M. GUIRLET L.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "HI-GE",
+      libelleMatiere: "HISTOIRE-GEOGRAPHIE",
+      isFirstOfMatiere: false,
+      nbElemProgMatiere: 6,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "S’exprimer à l’oral pour penser, communiquer et échanger. Connaître les caractéristiques des récits historiques et des descriptions employées en histoire et en géographie, et en réaliser.",
+      idElemProg: 727,
+      valeur: "3",
+      professeurs: [
+        {
+          id: 839,
+          nom: "M. FAUCHER H.",
+        },
+        {
+          id: 568,
+          nom: "M. GUIRLET L.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "HI-GE",
+      libelleMatiere: "HISTOIRE-GEOGRAPHIE",
+      isFirstOfMatiere: false,
+      nbElemProgMatiere: 6,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Réaliser des productions graphiques et cartographiques.",
+      idElemProg: 728,
+      valeur: "4",
+      professeurs: [
+        {
+          id: 839,
+          nom: "M. FAUCHER H.",
+        },
+        {
+          id: 568,
+          nom: "M. GUIRLET L.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "HI-GE",
+      libelleMatiere: "HISTOIRE-GEOGRAPHIE",
+      isFirstOfMatiere: false,
+      nbElemProgMatiere: 6,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme: "S’initier aux techniques d’argumentation.",
+      idElemProg: 731,
+      valeur: "3",
+      professeurs: [
+        {
+          id: 839,
+          nom: "M. FAUCHER H.",
+        },
+        {
+          id: 568,
+          nom: "M. GUIRLET L.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "PH-CH",
+      libelleMatiere: "PHYSIQUE-CHIMIE",
+      isFirstOfMatiere: true,
+      nbElemProgMatiere: 1,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Identifier des questions de nature scientifique.",
+      idElemProg: 737,
+      valeur: "3",
+      professeurs: [
+        {
+          id: 303,
+          nom: "Mme ALLAM S.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "TECHN",
+      libelleMatiere: "TECHNOLOGIE",
+      isFirstOfMatiere: true,
+      nbElemProgMatiere: 3,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Identifier un besoin et énoncer un problème technique, identifier les conditions, contraintes (normes et règlements) et ressources correspondantes.",
+      idElemProg: 782,
+      valeur: "4",
+      professeurs: [
+        {
+          id: 445,
+          nom: "M. ATSI M.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "TECHN",
+      libelleMatiere: "TECHNOLOGIE",
+      isFirstOfMatiere: false,
+      nbElemProgMatiere: 3,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Identifier le(s) matériau(x), les flux d’énergie et d’information dans le cadre d’une production technique sur un objet et décrire les transformations qui s’opèrent.",
+      idElemProg: 783,
+      valeur: "4",
+      professeurs: [
+        {
+          id: 445,
+          nom: "M. ATSI M.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "TECHN",
+      libelleMatiere: "TECHNOLOGIE",
+      isFirstOfMatiere: false,
+      nbElemProgMatiere: 3,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Imaginer, concevoir et programmer des applications informatiques nomades.",
+      idElemProg: 788,
+      valeur: "4",
+      professeurs: [
+        {
+          id: 445,
+          nom: "M. ATSI M.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "EDMUS",
+      libelleMatiere: "EDUCATION MUSICALE",
+      isFirstOfMatiere: true,
+      nbElemProgMatiere: 2,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Analyser des œuvres musicales en utilisant un vocabulaire précis.",
+      idElemProg: 658,
+      valeur: "3",
+      professeurs: [
+        {
+          id: 296,
+          nom: "M. CZWARTKOWSKI G.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "EDMUS",
+      libelleMatiere: "EDUCATION MUSICALE",
+      isFirstOfMatiere: false,
+      nbElemProgMatiere: 2,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Identifier par comparaison les différences et ressemblances dans l’interprétation d’une œuvre donnée.",
+      idElemProg: 660,
+      valeur: "3",
+      professeurs: [
+        {
+          id: 296,
+          nom: "M. CZWARTKOWSKI G.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "EPS",
+      libelleMatiere: "ED.PHYSIQUE & SPORT.",
+      isFirstOfMatiere: true,
+      nbElemProgMatiere: 2,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Verbaliser les émotions et sensations ressenties.",
+      idElemProg: 676,
+      valeur: "4",
+      professeurs: [
+        {
+          id: 29,
+          nom: "M. COURANT J.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "EPS",
+      libelleMatiere: "ED.PHYSIQUE & SPORT.",
+      isFirstOfMatiere: false,
+      nbElemProgMatiere: 2,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Adapter l’intensité de son engagement physique à ses possibilités pour ne pas se mettre en     danger.",
+      idElemProg: 689,
+      valeur: "3",
+      professeurs: [
+        {
+          id: 29,
+          nom: "M. COURANT J.",
+        },
+      ],
+    },
+    {
+      cdt: false,
+      codeMatiere: "LCALA",
+      libelleMatiere: "LCA LATIN",
+      isFirstOfMatiere: true,
+      nbElemProgMatiere: 1,
+      codeSousMatiere: "",
+      libelleSousMatiere: "",
+      isFirstOfSousMatiere: false,
+      nbElemProgSousMatiere: 0,
+      libelleElementProgramme:
+        "Utiliser ses capacités de raisonnement, ses connaissances sur la langue, savoir faire appel à des outils appropriés pour lire.",
+      idElemProg: 1160,
+      valeur: "3",
+      professeurs: [
+        {
+          id: 63,
+          nom: "Mme LIPKA V.",
+        },
+      ],
+    },
+  ],
+};
+
 const grades = {
   periodes,
   notes,
   parametrage,
+  LSUN,
 };
 
 export default grades;
