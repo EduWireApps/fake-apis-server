@@ -434,8 +434,8 @@ const agenda = (date: string): any[] => {
   for (let index = 0; index < 5; index++) {
     o.push(events[Math.floor(Math.random()*events.length)]);
   }
-  var i = 0;
-  var _hours = hours;
+  let i = 0;
+  let _hours = hours;
   o.forEach(e => {
     e.start_date = e.start_date.replace("%d", date);
     e.end_date = e.end_date.replace("%d", date);

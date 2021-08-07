@@ -92,7 +92,8 @@ class EdController {
 
   public agenda(req, res) {
     const getDaysArray = (s, e) => {
-      for (var a = [], d = new Date(s); d <= e; d.setDate(d.getDate() + 1)) {
+      let a = [];
+      for (let d = new Date(s); d <= e; d.setDate(d.getDate() + 1)) {
         const weekday = d.getDay() || 7;
         if (![6, 7].includes(weekday)) a.push(new Date(d));
       }
